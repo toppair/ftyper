@@ -8,11 +8,11 @@ license=("MIT")
 depends=(gcc-libs)
 makedepends=(cargo)
 url="https://github.com/toppair/ftyper"
-source=("$pkgname-$pkgver.tar.gz::https://github.com/toppair/ftyper/releases/download/v0.0.1-alpha/ftyper-0.0.1_alpha.tar.gz")
+source=("$pkgname-$pkgver.tar.gz::https://github.com/toppair/ftyper/archive/")
 package() {
    cd "$pkgname-$pkgver"
 
    install -Dm755 "$pkgname" "$pkgdir/usr/bin/$pkgname"
    install -Dm644 "LICENSE" "$pkgdir/usr/share/licenses/$pkgname/LICENSE"
 }
-md5sums=('889ff14bfad880b3fcfaab34b1eeb68e')
+md5sums=('2460549809982788b9f3edde6bc41bcc')
