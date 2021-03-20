@@ -6,7 +6,6 @@ arch=("x86_64")
 pkgdesc="Terminal typing practice"
 license=("MIT")
 depends=(gcc-libs)
-makedepends=(cargo)
 url="https://github.com/toppair/ftyper"
 source=("$pkgname-$pkgver.tar.gz::https://github.com/toppair/ftyper/releases/download/v0.0.1-alpha/ftyper-0.0.1_alpha.tar.gz")
 package() {
